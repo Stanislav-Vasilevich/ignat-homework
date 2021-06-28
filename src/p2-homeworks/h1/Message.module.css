@@ -37,12 +37,6 @@
   z-index: -1;
 }
 
-.send {
-  color: blue;
-  background: beige;
-  align-self: flex-end;
-}
-
 .text h2, .text p {
   padding: 0;
   margin: 0;
