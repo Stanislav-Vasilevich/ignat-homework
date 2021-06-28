@@ -1,0 +1,17 @@
+.item {
+  display: flex;
+  width: 460px;
+  max-height: 100px;
+  background-color: #c6ec71;
+}
+
+.item img {
+  width: 60px;
+  height:60px;
+  border-radius: 50%;
+}
+
+.body {
+  width: 370px;
+  max-height: 370px;
+}
