@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Message.module.css';
 
-const {item, body} = styles;
+const {item, body, background, text, hour} = styles;
 
 type MessagePropsType = {
   avatar: string
@@ -22,9 +22,12 @@ const Message: React.FC<MessagePropsType> = (
     <div className={item}>
       <img src={avatar} alt={name}/>
       <div className={body}>
-        <h2>Артем</h2>
-        <p>{message}</p>
-        <time dateTime={time}>{time}</time>
+        <div className={background}></div>
+        <div className={text}>
+          <h2>Артем</h2>
+          <p>{message}</p>
+        </div>
+        <time className={hour} dateTime={time}>{time}</time>
       </div>
     </div>
   )
