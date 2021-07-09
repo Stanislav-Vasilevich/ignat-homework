@@ -3,7 +3,7 @@
 ## Задания от Игната
 
 - Ссылка на репозиторий
-  GitHub [react-tsx-ignat-homework](https://github.com/Stanislav-Vasilevich/react-tsx-ignat-homework.git).
+  GitHub [react-tsx-ignat-homework](https://github.com/Stanislav-Vasilevich/ignat-homework-react-tsx.git).
 
 - Ссылка на google таблицу с
   заданием [simple react homeworks](https://docs.google.com/spreadsheets/d/18JlsfTElTvbNpmwvhSeiKztqZmF5bRAesmfmrl3P9rM/edit#gid=0)
@@ -11,9 +11,17 @@
 
 ### Команды для работы
 
-запуск(локально) в браузере:
+1. забрать изменения из удаленного репозитория и интегрировать их с изменениями в локальном репозитории:
 
-     `yarn start`
+    ```text
+      git pull
+    ```
+
+2. запуск(локально) в браузере:
+
+    ```text
+      yarn start
+    ```
 
 # Задания
 
