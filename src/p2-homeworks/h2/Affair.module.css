@@ -1,0 +1,18 @@
+.item {
+  padding: 5px;
+}
+
+.item span {
+  margin: 0 5px 0 0;
+  border-radius: 20px;
+}
+
+.item button {
+  border: 1px solid #e0911f;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.item button:hover {
+  background-color: #efd1a4;
+}
