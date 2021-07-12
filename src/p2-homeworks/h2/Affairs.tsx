@@ -8,7 +8,7 @@ const {body, buttons} = styles;
 
 type AffairsPropsType = { // need to fix any
     data: Array<AffairType>
-    setFilter: any
+    setFilter: (filter: FilterType) => void
     deleteAffairCallback: (_id: number)  => any
 }
 
