@@ -1,34 +1,34 @@
 import React, {useState} from 'react'
 import GreetingContainer from './GreetingContainer'
 
-// types
 export type UserType = {
-    _id: any // need to fix any
-    name: any // need to fix any
+  _id: string
+  name: string
 }
 
-// уровень работы с глобальными данными
 function HW3() {
-    const [users, setUsers] = useState<any>([]) // need to fix any
+  const [users, setUsers] = useState<Array<UserType>>([]);
 
-    const addUserCallback = (name: any) => { // need to fix any
-        setUsers([]) // need to fix
-    }
+  const addUserCallback = (name: UserType) => {
+    setUsers([...users, name]);
+  }
 
-    return (
-        <div>
-            <hr/>
-            homeworks 3
+  console.log(users)
 
-            {/*should work (должно работать)*/}
-            <GreetingContainer users={users} addUserCallback={addUserCallback}/>
+  return (
+    <div>
+      <hr/>
+      homeworks 3
 
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeGreeting/>*/}
-            <hr/>
-        </div>
-    )
+      <GreetingContainer
+        users={users}
+        addUserCallback={addUserCallback}
+      />
+
+      <hr/>
+      <hr/>
+    </div>
+  )
 }
 
-export default HW3
+export default HW3;

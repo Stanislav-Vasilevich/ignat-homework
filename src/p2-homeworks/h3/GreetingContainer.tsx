@@ -1,38 +1,47 @@
-import React, {useState} from 'react'
+import React, {ChangeEvent, useState} from 'react'
 import Greeting from './Greeting'
+import {UserType} from "./HW3";
+import {v1} from "uuid";
 
 type GreetingContainerPropsType = {
-    users: any // need to fix any
-    addUserCallback: any // need to fix any
+  users: Array<UserType>
+  addUserCallback: (name: UserType) => void
 }
 
-// более простой и понятный для новичков
-// function GreetingContainer(props: GreetingPropsType) {
+const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => {
+  const [name, setName] = useState<string>('');
+  const [error, setError] = useState<string>('');
 
-// более современный и удобный для про :)
-// уровень локальной логики
-const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => { // деструктуризация пропсов
-    const [name, setName] = useState<any>('') // need to fix any
-    const [error, setError] = useState<any>('') // need to fix any
+  const setNameCallback = (event: ChangeEvent<HTMLInputElement>) => {
+    setName(event.currentTarget.value);
+    setError('');
+  }
 
-    const setNameCallback = (e: any) => { // need to fix any
-        setName('') // need to fix
+  const addUser = () => {
+    if (name.length <= 2 || name === '') {
+      setError('Минимальное количество символов 2');
+    } else {
+      setError('');
+      setName('');
+
+      alert(`Hello ${name.trim()} !`);
+
+      addUserCallback({name: name.trim(), _id: v1()});
     }
-    const addUser = () => {
-        alert(`Hello  !`) // need to fix
-    }
+  }
 
-    const totalUsers = 0 // need to fix
+  let totalUsers = 0;
+  totalUsers = users.length;
 
-    return (
-        <Greeting
-            name={name}
-            setNameCallback={setNameCallback}
-            addUser={addUser}
-            error={error}
-            totalUsers={totalUsers}
-        />
-    )
+  return (
+    <Greeting
+      name={name}
+      setNameCallback={setNameCallback}
+      addUser={addUser}
+      error={error}
+      totalUsers={totalUsers}
+    />
+  )
 }
 
-export default GreetingContainer
+export default GreetingContainer;
