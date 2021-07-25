@@ -5,7 +5,8 @@
 .column {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    max-width: 300px;
+    margin: 20px;
 }
 
 .testSpanError {
