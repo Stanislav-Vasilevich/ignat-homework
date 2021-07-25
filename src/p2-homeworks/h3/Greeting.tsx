@@ -16,17 +16,17 @@ const Greeting: React.FC<GreetingPropsType> = (
   const inputClass = error ? s.error : '';
 
   return (
-    <div>
+    <div className={s.body}>
       <input
-        className={inputClass}
+        className={`${inputClass} ${s.input}`}
         onChange={setNameCallback}
         onKeyDown={addUserByEnter}
         value={name}
         onBlur={addUser}
       />
-      <button onClick={addUser} disabled={!name ? true : false}>add</button>
-      <span>{totalUsers}</span>
-      <div className={s.err}>{error}</div>
+      <button className={s.btn} onClick={addUser} disabled={!name ? true : false}>add</button>
+      <span className={s.counter}>{totalUsers}</span>
+      <div className={s.errText}>{error}</div>
     </div>
   )
 }
