@@ -1,17 +1,16 @@
 import React from 'react'
 import {AffairType} from "./HW2";
-import styles from './Affair.module.css'
+import styles from './Affair.module.css';
 
 const {item} = styles;
 
 type AffairPropsType = {
-  // key не нужно типизировать
   index: number
-  affair: AffairType // need to fix any
-  deleteAffairCallback: (_id: number) => any // need to fix any
+  affair: AffairType
+  deleteAffairCallback: (_id: number) => void
 }
 
-function Affair(props: AffairPropsType) {
+const Affair: React.FC<AffairPropsType> = (props) => {
   const deleteCallback = () => {
     props.deleteAffairCallback(props.affair._id)
   }

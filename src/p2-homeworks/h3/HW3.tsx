@@ -13,8 +13,6 @@ function HW3() {
     setUsers([...users, name]);
   }
 
-  console.log(users);
-
   return (
     <div>
       <hr/>
