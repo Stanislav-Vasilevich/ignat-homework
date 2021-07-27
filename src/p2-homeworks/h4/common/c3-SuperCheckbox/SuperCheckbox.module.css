@@ -1,5 +1,23 @@
-.checkbox {
+label {
+  cursor: pointer;
+}
 
+.checkbox {
+  display: none;
+}
+
+.checkbox + .notRealCheckbox {
+  display: inline-block;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  transition: .4s all;
+  border: 1px solid #ccc;
+  margin: 0 3px;
+}
+
+.checkbox:checked + .notRealCheckbox {
+  background: #f59c1b;
 }
 
 .spanClassName {

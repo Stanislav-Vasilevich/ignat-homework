@@ -1,6 +1,7 @@
 import React from 'react'
 import {AffairType} from "./HW2";
 import styles from './Affair.module.css';
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 const {item} = styles;
 
@@ -18,7 +19,7 @@ const Affair: React.FC<AffairPropsType> = (props) => {
   return (
     <div className={item}>
       <span>{`${props.index + 1}. `}{props.affair.name}</span>
-      <button onClick={deleteCallback}>X</button>
+      <SuperButton onClick={deleteCallback}>X</SuperButton>
     </div>
   )
 }

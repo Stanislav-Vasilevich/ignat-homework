@@ -1,10 +1,11 @@
 .item {
-  padding: 5px;
+  margin: 10px;
 }
 
 .item span {
-  margin: 0 5px 0 0;
   border-radius: 20px;
+  margin: 0 5px 0 0;
+  padding: 10px 5px;
 }
 
 .item button {

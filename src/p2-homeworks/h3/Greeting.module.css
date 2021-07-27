@@ -1,41 +1,23 @@
 .body {
-    min-height: 42px;
-    margin: 20px;
+  min-height: 42px;
+  margin: 20px;
 }
 
 .input {
-    height: 16px;
-}
-
-.btn, .counter {
-    margin: 0 0 0 8px;
-}
-
-.btn {
-    width: 60px;
-    height: 22px;
-    border: none;
-    background-color: #e0911f;
-    color: #fff;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .4s all;
-}
-
-.btn:hover {
-    background-color: #a86402;
-}
-
-.counter {
-
+  height: 16px;
+  margin: 0 5px 0 0;
 }
 
 .errText {
-    color: red;
-    font-size: 12px;
-    margin: 2px 0 0 0;
+  color: red;
+  font-size: 12px;
+  margin: 2px 0 0 0;
 }
 
 .error {
-    border: 1px solid red;
+  border: 1px solid red;
+}
+
+.counter {
+  margin: 0 5px;
 }

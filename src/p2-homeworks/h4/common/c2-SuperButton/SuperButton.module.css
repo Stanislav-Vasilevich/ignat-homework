@@ -1,7 +1,40 @@
 .default {
+  font-size: 16px;
+  line-height: 16px;
+  outline: none;
+  border: 2px solid #ccc;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .4s all;
+  padding: 4px 15px;
+}
 
+.default:hover {
+  background-color: #c6c6c6;
+}
+
+.default:active {
+  background-color: #f59c1b;
+}
+
+.default:disabled {
+  background-color: lightgrey;
+  color: #727272;
+  cursor: auto;
 }
 
 .red {
-    background: red;
+  background: red;
+  border: 2px solid red;
+  color: white;
+}
+
+.red:hover {
+  background: #b10000;
+}
+
+.red:active {
+  background: #000000;
 }
