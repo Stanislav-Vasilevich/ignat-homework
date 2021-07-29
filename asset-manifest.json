@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ignat-homework-react-tsx/static/css/main.9f42f6d4.chunk.css",
+    "main.js": "/ignat-homework-react-tsx/static/js/main.8ad9a30d.chunk.js",
+    "main.js.map": "/ignat-homework-react-tsx/static/js/main.8ad9a30d.chunk.js.map",
+    "runtime-main.js": "/ignat-homework-react-tsx/static/js/runtime-main.ccf6fa40.js",
+    "runtime-main.js.map": "/ignat-homework-react-tsx/static/js/runtime-main.ccf6fa40.js.map",
+    "static/js/2.23009ded.chunk.js": "/ignat-homework-react-tsx/static/js/2.23009ded.chunk.js",
+    "static/js/2.23009ded.chunk.js.map": "/ignat-homework-react-tsx/static/js/2.23009ded.chunk.js.map",
+    "index.html": "/ignat-homework-react-tsx/index.html",
+    "static/css/main.9f42f6d4.chunk.css.map": "/ignat-homework-react-tsx/static/css/main.9f42f6d4.chunk.css.map",
+    "static/js/2.23009ded.chunk.js.LICENSE.txt": "/ignat-homework-react-tsx/static/js/2.23009ded.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ccf6fa40.js",
+    "static/js/2.23009ded.chunk.js",
+    "static/css/main.9f42f6d4.chunk.css",
+    "static/js/main.8ad9a30d.chunk.js"
+  ]
+}
