@@ -3,7 +3,7 @@
 ## Задания от Игната
 
 - Ссылка на репозиторий
-  GitHub [react-tsx-ignat-homework](https://github.com/Stanislav-Vasilevich/ignat-homework-react-tsx.git).
+  GitHub [react-tsx-ignat-homework](https://stanislav-vasilevich.github.io/ignat-homework-react-tsx/).
 
 - Ссылка на google таблицу с
   заданием [simple react homeworks](https://docs.google.com/spreadsheets/d/18JlsfTElTvbNpmwvhSeiKztqZmF5bRAesmfmrl3P9rM/edit#gid=0)
