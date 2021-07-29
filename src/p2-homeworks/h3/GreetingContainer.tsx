@@ -18,7 +18,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
   }
 
   const addUser = () => {
-    if (name.length <= 2 || name === '') {
+    if (name.length <= 1 || name === '') {
       setError('Минимальное количество символов 1');
     } else {
       setError('');
