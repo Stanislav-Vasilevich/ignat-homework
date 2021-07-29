@@ -23,6 +23,18 @@
       yarn start
     ```
 
+3. создать папку build для deploy на сервер:
+
+    ```text
+      npm run build
+    ```
+
+4. deploy на сервер:
+
+    ```text
+      gh-pages -d build
+    ```
+
 # Задания
 
 <details>
