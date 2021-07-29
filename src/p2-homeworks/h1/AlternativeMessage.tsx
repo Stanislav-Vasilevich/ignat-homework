@@ -1,11 +1,11 @@
 import React from 'react'
 
 function AlternativeMessage() {
-    return (
-        <div>
+  return (
+    <div>
 
-        </div>
-    )
+    </div>
+  )
 }
 
 export default AlternativeMessage

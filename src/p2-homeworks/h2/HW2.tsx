@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Affairs from './Affairs'
+import TitleSection from "../../components/TitleSection";
 
 // types
 export type AffairPriorityType = 'high' | 'low' | 'middle';
@@ -42,7 +43,7 @@ function HW2() {
   return (
     <div>
       <hr/>
-      homeworks 2
+      <TitleSection title={'homeworks 2'}/>
 
       {/*should work (должно работать)*/}
       <Affairs

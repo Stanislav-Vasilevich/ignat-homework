@@ -31,7 +31,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
   }
 
   const addUserByEnter = (e: KeyboardEvent<HTMLInputElement>) => {
-    if(e.key === 'Enter') {
+    if (e.key === 'Enter') {
       addUser();
     }
   }

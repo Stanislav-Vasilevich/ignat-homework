@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import GreetingContainer from './GreetingContainer'
+import TitleSection from "../../components/TitleSection";
 
 export type UserType = {
   _id: string
@@ -16,7 +17,7 @@ function HW3() {
   return (
     <div>
       <hr/>
-      homeworks 3
+      <TitleSection title={'homeworks 3'}/>
 
       <GreetingContainer
         users={users}
