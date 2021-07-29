@@ -1,0 +1,38 @@
+.menu {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.hamburger {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  border: 1px solid #f59c1b;
+  border-radius: 5px;
+  background: transparent;
+  color: #f59c1b;
+  padding: 0;
+  margin: 0 0 0 15px;
+}
+
+.hamburger:hover {
+  background: #f59c1b;
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+  color: #727272;
+  transition: .4s all;
+  padding: 5px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.active {
+  color: #f59c1b;
+}
