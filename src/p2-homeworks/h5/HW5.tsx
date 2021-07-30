@@ -3,6 +3,7 @@ import {HashRouter} from "react-router-dom";
 import Header from './Header';
 import Routes from './Routes';
 import s from './HW5.module.css'
+import TitleSection from "../../components/TitleSection";
 
 
 function HW5() {
@@ -10,6 +11,8 @@ function HW5() {
     <div className={s.page}>
       {/*в gh-pages лучше работает HashRouter*/}
       <HashRouter>
+
+        <TitleSection title={'homeworks 5'}/>
 
         <Header/>
 
