@@ -5,19 +5,13 @@ import Routes from './Routes';
 import s from './HW5.module.css'
 import TitleSection from "../../components/TitleSection";
 
-
 function HW5() {
   return (
     <div className={s.page}>
-      {/*в gh-pages лучше работает HashRouter*/}
       <HashRouter>
-
         <TitleSection title={'homeworks 5'}/>
-
         <Header/>
-
         <Routes/>
-
       </HashRouter>
     </div>
   )

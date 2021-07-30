@@ -24,7 +24,6 @@ function HW6() {
       <hr/>
       <TitleSection title={'homeworks 6'}/>
 
-      {/*should work (должно работать)*/}
       <div className={s.body}>
         <SuperEditableSpan
           value={value}
@@ -37,12 +36,6 @@ function HW6() {
           <SuperButton onClick={restore}>restore</SuperButton>
         </div>
       </div>
-
-
-      <hr/>
-      {/*для личного творчества, могу проверить*/}
-      {/*<AlternativeSuperEditableSpan/>*/}
-      <hr/>
     </div>
   )
 }

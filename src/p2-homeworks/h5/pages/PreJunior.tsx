@@ -1,24 +1,7 @@
-import React from 'react'
-import HW1 from '../../h1/HW1'
-import HW2 from '../../h2/HW2'
-import HW3 from '../../h3/HW3'
-import HW4 from '../../h4/HW4'
-import HW6 from "../../h6/HW6";
+import React from 'react';
+import Section from "../../../components/Section";
 
-function PreJunior() {
-  return (
-    <div>
-      <HW1/>
-      <HW2/>
-      <HW3/>
-      <HW4/>
-      <HW6/>
+const PreJunior = () => <Section color={'red'}/>
 
-    </div>
-  )
-}
+export default PreJunior;
 
-export default PreJunior
-
-// сделайте по аналогии пустые страницы джун и джун+
-// туда будут добавляться следующие дз
