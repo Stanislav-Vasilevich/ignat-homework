@@ -6,43 +6,45 @@ import {restoreState, saveState} from './localStorage/localStorage'
 import TitleSection from "../../components/TitleSection";
 
 function HW6() {
-    const [value, setValue] = useState<string>('')
+  const [value, setValue] = useState<string>('')
 
-    const save = () => {
-        saveState<string>('editable-span-value', value)
-    }
+  // сохранить значение в localStorage
+  const save = () => {
+    saveState<string>('editable-span-value', value);
+  }
 
-    const restore = () => {
-        // setValue(value);
-      console.log('hi')
-    }
+  // получить из localStorage значение
+  const restore = () => {
+    const state = restoreState('editable-span-value', '');
+   setValue(state);
+  }
 
-    return (
-        <div>
-            <hr/>
-            <TitleSection title={'homeworks 6'}/>
+  return (
+    <div>
+      <hr/>
+      <TitleSection title={'homeworks 6'}/>
 
-            {/*should work (должно работать)*/}
-            <div className={s.body}>
-                <SuperEditableSpan
-                    value={value}
-                    onChangeText={setValue}
-                    spanProps={{children: value ? undefined : 'enter text...'}}
-                />
+      {/*should work (должно работать)*/}
+      <div className={s.body}>
+        <SuperEditableSpan
+          value={value}
+          onChangeText={setValue}
+          spanProps={{children: value ? undefined : 'enter text...'}}
+        />
 
-              <div className={s.buttons}>
-                <SuperButton className={s.btn} onClick={save}>save</SuperButton>
-                <SuperButton onClick={restore}>restore</SuperButton>
-              </div>
-            </div>
-
-
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperEditableSpan/>*/}
-            <hr/>
+        <div className={s.buttons}>
+          <SuperButton className={s.btn} onClick={save}>save</SuperButton>
+          <SuperButton onClick={restore}>restore</SuperButton>
         </div>
-    )
+      </div>
+
+
+      <hr/>
+      {/*для личного творчества, могу проверить*/}
+      {/*<AlternativeSuperEditableSpan/>*/}
+      <hr/>
+    </div>
+  )
 }
 
 export default HW6

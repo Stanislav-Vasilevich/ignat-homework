@@ -1,3 +1,5 @@
 .text {
-  cursor: context-menu;
+  display: inline-block;
+  height: 32px;
+  cursor: copy;
 }
