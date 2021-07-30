@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import s from './HW6.module.css';
 import SuperEditableSpan from './common/c4-SuperEditableSpan/SuperEditableSpan'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {restoreState, saveState} from './localStorage/localStorage'
@@ -12,7 +13,8 @@ function HW6() {
     }
 
     const restore = () => {
-        // setValue()
+        // setValue(value);
+      console.log('hi')
     }
 
     return (
@@ -21,15 +23,19 @@ function HW6() {
             <TitleSection title={'homeworks 6'}/>
 
             {/*should work (должно работать)*/}
-            <div>
+            <div className={s.body}>
                 <SuperEditableSpan
                     value={value}
                     onChangeText={setValue}
                     spanProps={{children: value ? undefined : 'enter text...'}}
                 />
+
+              <div className={s.buttons}>
+                <SuperButton className={s.btn} onClick={save}>save</SuperButton>
+                <SuperButton onClick={restore}>restore</SuperButton>
+              </div>
             </div>
-            <SuperButton onClick={save}>save</SuperButton>
-            <SuperButton onClick={restore}>restore</SuperButton>
+
 
             <hr/>
             {/*для личного творчества, могу проверить*/}

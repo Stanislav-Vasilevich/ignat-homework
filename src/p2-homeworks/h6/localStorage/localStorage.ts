@@ -25,3 +25,5 @@ saveState<StateType>('test', {x: 'A', y: 1})
 
 // получем в переменную state объект из ячейки 'test' или дэфолтный объект если ячейка пуста
 const state: StateType = restoreState<StateType>('test', {x: '', y: 0})
+
+console.log(state);
