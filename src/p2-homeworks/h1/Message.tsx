@@ -22,7 +22,7 @@ const Message: React.FC<MessagePropsType> = (
     <div className={item}>
       <img src={avatar} alt={name}/>
       <div className={body}>
-        <div className={background}></div>
+        <div className={background}/>
         <div className={text}>
           <h2>Артем</h2>
           <p>{message}</p>
