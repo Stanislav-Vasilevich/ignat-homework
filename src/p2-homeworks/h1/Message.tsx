@@ -24,7 +24,7 @@ const Message: React.FC<MessagePropsType> = (
       <div className={body}>
         <div className={background}/>
         <div className={text}>
-          <h2>Артем</h2>
+          <h2>{name}</h2>
           <p>{message}</p>
         </div>
         <time className={hour} dateTime={time}>{time}</time>
