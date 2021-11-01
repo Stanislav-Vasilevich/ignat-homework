@@ -4,12 +4,13 @@ import {AffairType, FilterType} from './HW2'
 import styles from './Affairs.module.css'
 import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
-const {body, buttons} = styles;
+const {body, buttons, active} = styles;
 
 type AffairsPropsType = {
   data: Array<AffairType>
   setFilter: (filter: FilterType) => void
-  deleteAffairCallback: (_id: number) => any
+  deleteAffairCallback: (_id: number) => void
+  filter: string
 }
 
 function Affairs(props: AffairsPropsType) {
@@ -35,10 +36,10 @@ function Affairs(props: AffairsPropsType) {
       </div>
 
       <div className={buttons}>
-        <SuperButton onClick={setAll}>All</SuperButton>
-        <SuperButton onClick={setHigh}>High</SuperButton>
-        <SuperButton onClick={setMiddle}>Middle</SuperButton>
-        <SuperButton onClick={setLow}>Low</SuperButton>
+        <SuperButton className={props.filter === 'all' ? active : ''} onClick={setAll}>All</SuperButton>
+        <SuperButton className={props.filter === 'high' ? active : ''} onClick={setHigh}>High</SuperButton>
+        <SuperButton className={props.filter === 'middle' ? active : ''} onClick={setMiddle}>Middle</SuperButton>
+        <SuperButton className={props.filter === 'low' ? active : ''} onClick={setLow}>Low</SuperButton>
       </div>
     </div>
   )
