@@ -10,11 +10,11 @@ type AffairsPropsType = {
   data: Array<AffairType>
   setFilter: (filter: FilterType) => void
   deleteAffairCallback: (_id: number) => void
-  filter: string
+  filter: FilterType
 }
 
 function Affairs(props: AffairsPropsType) {
-  const mappedAffairs = props.data.map((a: AffairType, index) => (
+  const mappedAffairs = props.data.map((a, index) => (
     <Affair
       index={index}
       key={a._id}
@@ -28,6 +28,11 @@ function Affairs(props: AffairsPropsType) {
   const setMiddle = () => props.setFilter('middle')
   const setLow = () => props.setFilter('low')
 
+  const styleAll = (str: string) => props.filter === str ? active : ''
+  const styleHigh = (str: string) => props.filter === str ? active : ''
+  const styleMiddle = (str: string) => props.filter === str ? active : ''
+  const styleLow = (str: string) => props.filter === str ? active : ''
+
   return (
     <div className={body}>
 
@@ -36,10 +41,10 @@ function Affairs(props: AffairsPropsType) {
       </div>
 
       <div className={buttons}>
-        <SuperButton className={props.filter === 'all' ? active : ''} onClick={setAll}>All</SuperButton>
-        <SuperButton className={props.filter === 'high' ? active : ''} onClick={setHigh}>High</SuperButton>
-        <SuperButton className={props.filter === 'middle' ? active : ''} onClick={setMiddle}>Middle</SuperButton>
-        <SuperButton className={props.filter === 'low' ? active : ''} onClick={setLow}>Low</SuperButton>
+        <SuperButton className={styleAll('all')} onClick={setAll}>All</SuperButton>
+        <SuperButton className={styleHigh('high')} onClick={setHigh}>High</SuperButton>
+        <SuperButton className={styleMiddle('middle')} onClick={setMiddle}>Middle</SuperButton>
+        <SuperButton className={styleLow('low')} onClick={setLow}>Low</SuperButton>
       </div>
     </div>
   )
