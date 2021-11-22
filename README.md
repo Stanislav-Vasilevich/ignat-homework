@@ -37,32 +37,34 @@
 
 # Задания
 
+### 1-е задание
+
 <details>
 <summary>Подробнее ...</summary>
 
-# 1-е задание
+
 
 1. качаем проект домашек [на GitHub](https://github.com/IgnatZakalinsky/simple-react-homeworks)
-   ![Alt-текст](./src/image/01.png)
+   ![Alt-текст](src/image/homeworks1/01.png)
 2. распаковываем в папку без русских букв, пробелов и т.д.
    [на GitHub](https://github.com/IgnatZakalinsky/simple-react-homeworks)
-   ![Alt-текст](./src/image/02.png)
+   ![Alt-текст](src/image/homeworks1/02.png)
 3. создаём свой проект с тс и копируем в него папку src моего проекта в свой с заменой
    ```text
     yarn create react-app homeworks --template typescript
    ```
 4. открываем проект через вэбшторм, прописываем в терминале проекта npm install (или yarn) и ищем компоненту HW1
    [на GitHub](https://github.com/IgnatZakalinsky/simple-react-homeworks)
-   ![Alt-текст](./src/image/03.png)
+   ![Alt-текст](src/image/homeworks1/03.png)
 5. нужно сделать так чтоб при раскомментировании Message всё работало и выглядело примерно так:
    [на GitHub](https://github.com/IgnatZakalinsky/simple-react-homeworks)
-   ![Alt-текст](./src/image/04.png)
+   ![Alt-текст](src/image/homeworks1/04.png)
 6. нужно типизировать пропсы сразу, any/object/Function - крайне нежелательны даже вначале, если не знаете как - пишем другу, в группу с пометкой #help, мне или на хэлп
 7. Ctrl + Alt + L не забывайте нажимать чтоб красивый код был (это увеличивает скорость обучения и чтения кода и облегчает поиск ошибок и понимание "что тут происходит")
 8. можете проверить свою работу тестом, кликнув по файлу теста правой кнопкой и выбрав Run 'Message.test.tsx'
 9. (не обязательно) компонента AlternativeMessage для личного творчества (можете попробовать другие пропсы и т.д., можно попросить сделать кодревью на хэлпе)
    [на GitHub](https://github.com/IgnatZakalinsky/simple-react-homeworks)
-   ![Alt-текст](./src/image/05.png)
+   ![Alt-текст](src/image/homeworks1/05.png)
 
 </details>
 
@@ -70,3 +72,64 @@
 ---
 ---
 
+### 2-е задание
+
+<details>
+<summary>Подробнее ...</summary>
+
+
+
+1. подключите в App HW2 (изначально будет отключён) [на GitHub](https://github.com/IgnatZakalinsky/simple-react-homeworks)
+   ![Alt-текст](src/image/homeworks2/01.png)
+2. в этой домашке есть список дел - нужно чтоб сайт умел сортировать дела по приоритетам и удалять дела
+   [на GitHub](https://github.com/IgnatZakalinsky/simple-react-homeworks)
+   ![Alt-текст](src/image/homeworks2/02.png)
+3. замените ВСЕ any нужными типами, any/object/Function - крайне нежелательны
+   [на GitHub](https://github.com/IgnatZakalinsky/simple-react-homeworks)
+   ![Alt-текст](src/image/homeworks2/03.png)
+4. сделайте функции фильтрации и удаления дел так чтоб они прошли тесты
+   [на GitHub](https://github.com/IgnatZakalinsky/simple-react-homeworks)
+   ![Alt-текст](src/image/homeworks2/04.png)
+5. сделайте колбэки для кнопок в компонентах Affairs и Affair
+   [на GitHub](https://github.com/IgnatZakalinsky/simple-react-homeworks)
+   ![Alt-текст](src/image/homeworks2/05.png)
+6. отобразите красиво данные "дела" и их приоритет в компоненте Affair [на GitHub](https://github.com/IgnatZakalinsky/simple-react-homeworks)
+   ![Alt-текст](src/image/homeworks2/06.png)
+7. Ctrl + Alt + L не забывайте нажимать чтоб красивый код был (это увеличивает скорость обучения и чтения кода и облегчает поиск ошибок и понимание "что тут происходит")
+8. (не обязательно) компонента AlternativeAffairs для личного творчества (можете попробовать другие пропсы и т.д., могу по ней сделать кодревью)
+
+</details>
+
+---
+---
+---
+
+### 3-е задание
+
+<details>
+<summary>Подробнее ...</summary>
+
+
+
+1. подключите в App HW3 (изначально будет отключён)
+2. в этой домашке есть инпут, кнопка и спан - нужно чтоб сайт здоровался с каждым введённым именем, добавлял их в массив и показывал количетво имён
+   [на GitHub](https://github.com/IgnatZakalinsky/simple-react-homeworks)
+   ![Alt-текст](src/image/homeworks3/01.png)
+3. замените ВСЕ any нужными типами, any/object/Function - крайне нежелательны
+   [на GitHub](https://github.com/IgnatZakalinsky/simple-react-homeworks)
+   ![Alt-текст](src/image/homeworks2/03.png)
+4. установить библиотеки uuid и @types/uuid и сделать функцию добавления объекта с именем
+   [на GitHub](https://github.com/IgnatZakalinsky/simple-react-homeworks)
+   ![Alt-текст](src/image/homeworks3/02.png)
+5. добавляйте и приветствуйте только тех у кого НЕ пустое имя, иначе показывайте ошибку
+   [на GitHub](https://github.com/IgnatZakalinsky/simple-react-homeworks)
+   ![Alt-текст](src/image/homeworks3/03.png)
+6. получите количество юзеров в переменную totalUsers (БЕЗ useState)
+7. определите класс инпута с помощью тернарного оператора в зависимости от наличия ошибки, ...и сделайте пж красивую вёрстку :)
+8. Ctrl + Alt + L не забывайте нажимать чтоб красивый код был (это увеличивает скорость обучения и чтения кода и облегчает поиск ошибок и понимание "что тут происходит")
+
+</details>
+
+---
+---
+---

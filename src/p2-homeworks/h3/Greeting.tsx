@@ -13,7 +13,14 @@ type GreetingPropsType = {
 }
 
 const Greeting: React.FC<GreetingPropsType> = (
-  {name, setNameCallback, addUser, addUserByEnter, error, totalUsers}
+  {
+    name,
+    setNameCallback,
+    addUser,
+    addUserByEnter,
+    error,
+    totalUsers
+  }
 ) => {
   const inputClass = error ? s.error : '';
 
@@ -29,7 +36,7 @@ const Greeting: React.FC<GreetingPropsType> = (
       />
       <SuperButton
         onClick={addUser}
-        disabled={!name ? true : false}
+        disabled={!name}
       >
         add
       </SuperButton>
