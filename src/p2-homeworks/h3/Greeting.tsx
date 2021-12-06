@@ -12,36 +12,27 @@ type GreetingPropsType = {
   totalUsers: number
 }
 
-const Greeting: React.FC<GreetingPropsType> = (
-  {
-    name,
-    setNameCallback,
-    addUser,
-    addUserByEnter,
-    error,
-    totalUsers
-  }
-) => {
-  const inputClass = error ? s.error : '';
+const Greeting = (props: GreetingPropsType) => {
+  const inputClass = props.error ? s.error : null;
 
   return (
     <div className={s.body}>
       <SuperInputText
+        name={props.name}
         className={`${inputClass} ${s.input}`}
-        onChange={setNameCallback}
-        onKeyDown={addUserByEnter}
-        value={name}
-        onBlur={addUser}
+        onChange={props.setNameCallback}
+        onKeyDown={props.addUserByEnter}
+        value={props.name}
         placeholder={'текст...'}
       />
       <SuperButton
-        onClick={addUser}
-        disabled={!name}
+        onClick={props.addUser}
+        disabled={!props.name}
       >
         add
       </SuperButton>
-      <span className={s.counter}>{totalUsers}</span>
-      <div className={s.errText}>{error}</div>
+      <span className={s.counter}>{props.totalUsers}</span>
+      <div className={s.errText}>{props.error}</div>
     </div>
   )
 }

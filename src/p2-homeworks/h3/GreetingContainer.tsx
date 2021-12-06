@@ -8,16 +8,17 @@ type GreetingContainerPropsType = {
   addUserCallback: (name: UserType) => void
 }
 
-const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => {
+const GreetingContainer = (props: GreetingContainerPropsType) => {
   const [name, setName] = useState<string>('');
   const [error, setError] = useState<string>('');
+
 
   const setNameCallback = (event: ChangeEvent<HTMLInputElement>) => {
     setName(event.currentTarget.value);
     setError('');
   }
 
-  const addUser = () => {
+  const validateInputText = () => {
     if (name.length <= 1 || name === '') {
       setError('Минимальное количество символов 2');
     } else {
@@ -26,17 +27,21 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
 
       alert(`Hello ${name.trim()} !`);
 
-      addUserCallback({name: name.trim(), _id: v1()});
+      props.addUserCallback({name: name.trim(), _id: v1()});
     }
+  }
+
+  const addUser = () => {
+    validateInputText();
   }
 
   const addUserByEnter = (e: KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') {
-      addUser();
+      validateInputText();
     }
   }
 
-  let totalUsers = users.length;
+  let totalUsers = props.users.length;
 
   return (
     <Greeting
