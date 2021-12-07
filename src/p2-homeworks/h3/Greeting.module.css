@@ -14,7 +14,7 @@
   margin: 2px 0 0 0;
 }
 
-.error {
+.body .error {
   border: 1px solid red;
 }
 

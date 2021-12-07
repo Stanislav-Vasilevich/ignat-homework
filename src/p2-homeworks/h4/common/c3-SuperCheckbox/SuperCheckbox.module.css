@@ -1,5 +1,7 @@
 label {
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .checkbox {
@@ -9,17 +11,19 @@ label {
 .checkbox + .notRealCheckbox {
   display: inline-block;
   cursor: pointer;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   transition: .4s all;
-  border: 1px solid #ccc;
+  outline: 1px solid #f5b246;
   margin: 0 3px;
 }
 
 .checkbox:checked + .notRealCheckbox {
-  background: #f59c1b;
+  outline: none;
+  background: url("./../../../../image/homeworks4/checkbox.jpg") 0 0/100% no-repeat;
 }
 
 .spanClassName {
-
+  font-size: 18px;
+  padding: 0;
 }

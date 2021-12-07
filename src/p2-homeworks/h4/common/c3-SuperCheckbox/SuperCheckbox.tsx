@@ -36,7 +36,7 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
 
         {...restProps} // отдаём инпуту остальные пропсы если они есть (checked например там внутри)
       />
-      <div className={s.notRealCheckbox}></div>
+      <div className={s.notRealCheckbox}/>
       {children && <span className={s.spanClassName}>{children}</span>}
     </label> // благодаря label нажатие на спан передастся в инпут
   )
