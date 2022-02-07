@@ -20,7 +20,7 @@
     "uuid": "^8.3.2",
     "web-vitals": "^1.0.1"
   },
-  "homepage": "https://Stanislav-Vasilevich.github.io/ignat-homework-react-tsx",
+  "homepage": "https://Stanislav-Vasilevich.github.io/ignat-homework/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
