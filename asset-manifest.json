@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/ignat-homework-react-tsx/static/css/main.b9ce2d37.chunk.css",
-    "main.js": "/ignat-homework-react-tsx/static/js/main.ed382c39.chunk.js",
-    "main.js.map": "/ignat-homework-react-tsx/static/js/main.ed382c39.chunk.js.map",
-    "runtime-main.js": "/ignat-homework-react-tsx/static/js/runtime-main.ccf6fa40.js",
-    "runtime-main.js.map": "/ignat-homework-react-tsx/static/js/runtime-main.ccf6fa40.js.map",
-    "static/js/2.d8b791a7.chunk.js": "/ignat-homework-react-tsx/static/js/2.d8b791a7.chunk.js",
-    "static/js/2.d8b791a7.chunk.js.map": "/ignat-homework-react-tsx/static/js/2.d8b791a7.chunk.js.map",
-    "index.html": "/ignat-homework-react-tsx/index.html",
-    "static/css/main.b9ce2d37.chunk.css.map": "/ignat-homework-react-tsx/static/css/main.b9ce2d37.chunk.css.map",
-    "static/js/2.d8b791a7.chunk.js.LICENSE.txt": "/ignat-homework-react-tsx/static/js/2.d8b791a7.chunk.js.LICENSE.txt",
-    "static/media/SuperCheckbox.module.css": "/ignat-homework-react-tsx/static/media/checkbox.0702c2d3.jpg"
+    "main.css": "/ignat-homework/static/css/main.6198ae2c.chunk.css",
+    "main.js": "/ignat-homework/static/js/main.05a4c772.chunk.js",
+    "main.js.map": "/ignat-homework/static/js/main.05a4c772.chunk.js.map",
+    "runtime-main.js": "/ignat-homework/static/js/runtime-main.b312f4f0.js",
+    "runtime-main.js.map": "/ignat-homework/static/js/runtime-main.b312f4f0.js.map",
+    "static/js/2.d8b791a7.chunk.js": "/ignat-homework/static/js/2.d8b791a7.chunk.js",
+    "static/js/2.d8b791a7.chunk.js.map": "/ignat-homework/static/js/2.d8b791a7.chunk.js.map",
+    "index.html": "/ignat-homework/index.html",
+    "static/css/main.6198ae2c.chunk.css.map": "/ignat-homework/static/css/main.6198ae2c.chunk.css.map",
+    "static/js/2.d8b791a7.chunk.js.LICENSE.txt": "/ignat-homework/static/js/2.d8b791a7.chunk.js.LICENSE.txt",
+    "static/media/SuperCheckbox.module.css": "/ignat-homework/static/media/checkbox.0702c2d3.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ccf6fa40.js",
+    "static/js/runtime-main.b312f4f0.js",
     "static/js/2.d8b791a7.chunk.js",
-    "static/css/main.b9ce2d37.chunk.css",
-    "static/js/main.ed382c39.chunk.js"
+    "static/css/main.6198ae2c.chunk.css",
+    "static/js/main.05a4c772.chunk.js"
   ]
 }
