@@ -1,7 +1,7 @@
 import React from 'react';
-import Section from "../../../components/Section";
+import Section from '../../../components/Section';
 
-const PreJunior = () => <Section color={'red'}/>
+const PreJunior = () => <Section/>
 
 export default PreJunior;
 

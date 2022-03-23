@@ -3,20 +3,22 @@ import s from './HW6.module.css';
 import SuperEditableSpan from './common/c4-SuperEditableSpan/SuperEditableSpan'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {restoreState, saveState} from './localStorage/localStorage'
-import TitleSection from "../../components/TitleSection";
+import TitleSection from '../../components/TitleSection';
 
 function HW6() {
-  const [value, setValue] = useState<string>('')
+  const [value, setValue] = useState<string>('');
 
   // сохранить значение в localStorage
   const save = () => {
+    console.log('save');
     saveState<string>('editable-span-value', value);
   }
 
   // получить из localStorage значение
   const restore = () => {
+    console.log('restore');
     const state = restoreState('editable-span-value', '');
-   setValue(state);
+    setValue(state);
   }
 
   return (
