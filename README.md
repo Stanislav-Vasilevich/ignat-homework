@@ -136,3 +136,33 @@
 ---
 ---
 ---
+
+### 4-е задание
+
+<details>
+<summary>Подробнее ...</summary>
+
+
+
+1. подключите в App HW4 (изначально будет отключён)
+2. в этой дз мы сделаем свои навароченные инпут-текст, кнопку и чекбокс что бы их использовать ВМЕСТО стандартных
+   [на GitHub](https://github.com/IgnatZakalinsky/simple-react-homeworks)
+   ![Alt-текст](src/image/homeworks3/01.png)
+3. замените ВСЕ any нужными типами, any/object/Function - крайне нежелательны
+   [на GitHub](https://github.com/IgnatZakalinsky/simple-react-homeworks)
+   ![Alt-текст](src/image/homeworks2/03.png)
+4. установить библиотеки uuid и @types/uuid и сделать функцию добавления объекта с именем
+   [на GitHub](https://github.com/IgnatZakalinsky/simple-react-homeworks)
+   ![Alt-текст](src/image/homeworks3/02.png)
+5. добавляйте и приветствуйте только тех у кого НЕ пустое имя, иначе показывайте ошибку
+   [на GitHub](https://github.com/IgnatZakalinsky/simple-react-homeworks)
+   ![Alt-текст](src/image/homeworks3/03.png)
+6. получите количество юзеров в переменную totalUsers (БЕЗ useState)
+7. определите класс инпута с помощью тернарного оператора в зависимости от наличия ошибки, ...и сделайте пж красивую вёрстку :)
+8. Ctrl + Alt + L не забывайте нажимать чтоб красивый код был (это увеличивает скорость обучения и чтения кода и облегчает поиск ошибок и понимание "что тут происходит")
+
+</details>
+
+---
+---
+---
