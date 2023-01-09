@@ -1,11 +1,11 @@
-import React, {Dispatch, SetStateAction} from 'react'
+import React from 'react'
 import Affair from './affair/Affair'
 import {AffairType, FilterType} from '../HW2'
 import s from './Affairs.module.css'
 
 type AffairsPropsType = {
 	data: Array<AffairType>
-	setFilter: Dispatch<SetStateAction<FilterType>>
+	setFilter: (filter: FilterType) => void
 	deleteAffairCallback: (id: number) => void
 	filter: FilterType
 }

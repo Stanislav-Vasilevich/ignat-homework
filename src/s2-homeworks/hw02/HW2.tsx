@@ -46,8 +46,7 @@ function HW2() {
 
 	const filteredAffairs = filterAffairs(affairs, filter)
 	const deleteAffairCallback = (_id: number) => {
-		const newAffairsArray = affairs.filter(i => i._id !== _id);
-		setAffairs(newAffairsArray);
+		setAffairs(deleteAffair(affairs, _id));
 	}
 
 	return (
