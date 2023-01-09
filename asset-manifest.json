@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ignat-homework/static/css/main.b1f61659.css",
-    "main.js": "/ignat-homework/static/js/main.2d5ef5a2.js",
+    "main.js": "/ignat-homework/static/js/main.a708249f.js",
     "static/js/787.66cb4309.chunk.js": "/ignat-homework/static/js/787.66cb4309.chunk.js",
     "static/media/Johnny-Depp.jpg": "/ignat-homework/static/media/Johnny-Depp.4db4d12aea507f317e8a.jpg",
     "index.html": "/ignat-homework/index.html",
     "main.b1f61659.css.map": "/ignat-homework/static/css/main.b1f61659.css.map",
-    "main.2d5ef5a2.js.map": "/ignat-homework/static/js/main.2d5ef5a2.js.map",
+    "main.a708249f.js.map": "/ignat-homework/static/js/main.a708249f.js.map",
     "787.66cb4309.chunk.js.map": "/ignat-homework/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b1f61659.css",
-    "static/js/main.2d5ef5a2.js"
+    "static/js/main.a708249f.js"
   ]
 }
