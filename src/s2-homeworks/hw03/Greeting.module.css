@@ -24,13 +24,13 @@
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 20px;
-	color: #000000;
+	color: #000;
 	padding: 8px 12px;
 	margin: 0 0 7px;
 }
 
 .input:focus {
-
+	border: 1px solid black;
 }
 
 .errorInput {
