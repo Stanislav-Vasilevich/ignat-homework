@@ -2,19 +2,43 @@
 }
 
 .input {
+	font-family: 'Montserrat';
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: #000;
+	width: 372px;
+	height: 36px;
+	border: 1px solid #D1D1D1;
+	border-radius: 5px;
+	outline: none;
+	padding: 8px 12px;
+	margin: 0 0 7px;
 }
 
 .inputWrapper {
+	display: flex;
+	flex-direction: column-reverse;
 }
 
 .superInput {
 }
 
 .errorInput {
+	border: 1px solid #CC1439;
 }
 
 .errorInput:focus {
+	font-family: 'Montserrat';
+	font-size: 14px;
+	line-height: 17px;
+	margin: 0;
 }
 
 .error {
+	font-family: 'Montserrat';
+	font-size: 10px;
+	line-height: 12px;
+	color: #CC1439;
+	margin: 0 0 5px;
 }
