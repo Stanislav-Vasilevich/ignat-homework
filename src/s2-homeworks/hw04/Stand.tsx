@@ -44,6 +44,8 @@ const Stand = () => {
 				<div>
 					<SuperButton
 						id={'hw4-super-button-default'}
+						xType={'default'}
+
 					>
 						default
 					</SuperButton>
