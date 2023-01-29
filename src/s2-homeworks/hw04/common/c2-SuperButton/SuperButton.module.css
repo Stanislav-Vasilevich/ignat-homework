@@ -4,7 +4,7 @@
 	font-size: 14px;
 	line-height: 20px;
 	color: #FFF;
-	background: #0066CC;
+	background: green;
 	border: none;
 	outline: none;
 	border-radius: 3px;
@@ -23,6 +23,10 @@
 	border: 1px solid #0066CC;
 	color: #0066CC;
 	background: transparent;
+}
+
+.default {
+	background: #0066CC;
 }
 
 .red {
@@ -57,4 +61,12 @@
 	background: #004D99;
 	opacity: 0.5;
 	color: #002E5C;
+}
+
+.default:hover {
+	background: #0080FF;
+}
+
+.default:active {
+	background: #0059B3;
 }
