@@ -21,7 +21,9 @@ export const Header: FC<PropsType> = ({handleOpen}) => {
 				? 'Junior'
 				: currentPath === PATH.JUNIOR_PLUS
 					? 'Junior Plus'
-					: 'Error'
+					: currentPath === '/'
+						? 'Pre-junior'
+						: 'Error'
 	return (
 		<header id={'hw5-header'} className={s.header}>
 			<div className={`${s2.container} ${s.content}`}>

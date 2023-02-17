@@ -5,54 +5,72 @@ import {PATH} from '../Pages'
 import closeIcon from './closeOutline.svg'
 
 type PropsType = {
-    open: boolean
-    handleClose: () => void
+	open: boolean
+	handleClose: () => void
 }
 
 export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
-    const sidebarClass = s.sidebar
-        + (open ? ' ' + s.open : '')
-    return (
-        <>
-            {/*затемнение справа от открытого меню*/}
-            {open && <div className={s.background} onClick={handleClose}/>}
+	const sidebarClass = s.sidebar
+		+ (open ? ' ' + s.open : '')
 
-            <aside className={sidebarClass}>
-                <button className={s.close} onClick={handleClose}>
-                    <img
-                        src={closeIcon}
-                        alt="close sidebar"
-                        id={'hw5-menu-close'}
-                    />
-                </button>
+	type ClassActiveType = {
+		isActive: boolean
+		isPending: boolean
+	}
 
-                <nav id={'hw5-menu'} className={s.nav}>
-                    <NavLink
-                        id={'hw5-pre-junior-link'}
-                        to={PATH.PRE_JUNIOR}
-                        onClick={handleClose}
-												className={(params) => params.isActive ? s.active : s.item}
-                    >
-                        Pre-junior
-                    </NavLink>
-                    <NavLink
-                        id={'hw5-junior-link'}
-                        to={PATH.JUNIOR}
-                        onClick={handleClose}
-												className={(params) => params.isActive ? s.active : s.item}
-                    >
-                        Junior
-                    </NavLink>
-                    <NavLink
-                        id={'hw5-junior-plus-link'}
-                        to={PATH.JUNIOR_PLUS}
-                        onClick={handleClose}
-												className={(params) => params.isActive ? s.active : s.item}
-                    >
-                        Junior Plus
-                    </NavLink>
-                </nav>
-            </aside>
-        </>
-    )
+	const setActive = (params: ClassActiveType) => {
+		// params.isActive ? s.active : s.item
+		console.log('params.isActive: ', params.isActive)
+		console.log('params.isPending: ', params.isPending)
+
+		if(params.isActive) {
+			return s.active
+		} else {
+			return s.item
+		}
+	}
+
+	return (
+		<>
+			{/*затемнение справа от открытого меню*/}
+			{open && <div className={s.background} onClick={handleClose}/>}
+
+			<aside className={sidebarClass}>
+				<button className={s.close} onClick={handleClose}>
+					<img
+						src={closeIcon}
+						alt="close sidebar"
+						id={'hw5-menu-close'}
+					/>
+				</button>
+
+				<nav id={'hw5-menu'} className={s.nav}>
+					<NavLink
+						id={'hw5-pre-junior-link'}
+						to={PATH.PRE_JUNIOR}
+						onClick={handleClose}
+						className={setActive}
+					>
+						Pre-junior
+					</NavLink>
+					<NavLink
+						id={'hw5-junior-link'}
+						to={PATH.JUNIOR}
+						onClick={handleClose}
+						className={setActive}
+					>
+						Junior
+					</NavLink>
+					<NavLink
+						id={'hw5-junior-plus-link'}
+						to={PATH.JUNIOR_PLUS}
+						onClick={handleClose}
+						className={setActive}
+					>
+						Junior Plus
+					</NavLink>
+				</nav>
+			</aside>
+		</>
+	)
 }
