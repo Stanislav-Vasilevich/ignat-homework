@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ignat-homework/static/css/main.38a69dc0.css",
-    "main.js": "/ignat-homework/static/js/main.0614403e.js",
+    "main.js": "/ignat-homework/static/js/main.896fabfa.js",
     "static/js/787.66cb4309.chunk.js": "/ignat-homework/static/js/787.66cb4309.chunk.js",
     "static/media/404.svg": "/ignat-homework/static/media/404.9ec31c0ba8d95b0480272e46af98c955.svg",
     "static/media/Johnny-Depp.jpg": "/ignat-homework/static/media/Johnny-Depp.4db4d12aea507f317e8a.jpg",
@@ -10,11 +10,11 @@
     "index.html": "/ignat-homework/index.html",
     "static/media/burger.svg": "/ignat-homework/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
     "main.38a69dc0.css.map": "/ignat-homework/static/css/main.38a69dc0.css.map",
-    "main.0614403e.js.map": "/ignat-homework/static/js/main.0614403e.js.map",
+    "main.896fabfa.js.map": "/ignat-homework/static/js/main.896fabfa.js.map",
     "787.66cb4309.chunk.js.map": "/ignat-homework/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.38a69dc0.css",
-    "static/js/main.0614403e.js"
+    "static/js/main.896fabfa.js"
   ]
 }
