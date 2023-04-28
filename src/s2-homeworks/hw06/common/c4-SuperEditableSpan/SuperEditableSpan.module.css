@@ -2,10 +2,20 @@
 }
 
 .span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #0080FF;
+}
+
+.span:first-letter {
+  text-transform: uppercase;
 }
 
 .input {
+
 }
 
 .pen {
+  margin: 0 10px 0 0;
 }

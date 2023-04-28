@@ -20,8 +20,6 @@ export const Sidebar: FC<PropsType> = ({open, handleClose}) => {
 
 	const setActive = (params: ClassActiveType) => {
 		// params.isActive ? s.active : s.item
-		console.log('params.isActive: ', params.isActive)
-		console.log('params.isPending: ', params.isPending)
 
 		if(params.isActive) {
 			return s.active
