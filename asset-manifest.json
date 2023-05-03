@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/ignat-homework/static/css/main.38a69dc0.css",
-    "main.js": "/ignat-homework/static/js/main.21774f7b.js",
+    "main.css": "/ignat-homework/static/css/main.ec5c87cd.css",
+    "main.js": "/ignat-homework/static/js/main.c0e2b173.js",
     "static/js/787.66cb4309.chunk.js": "/ignat-homework/static/js/787.66cb4309.chunk.js",
     "static/media/404.svg": "/ignat-homework/static/media/404.9ec31c0ba8d95b0480272e46af98c955.svg",
     "static/media/Johnny-Depp.jpg": "/ignat-homework/static/media/Johnny-Depp.4db4d12aea507f317e8a.jpg",
     "static/media/closeOutline.svg": "/ignat-homework/static/media/closeOutline.b64ba402fac8a549bc2de97e9cf84a61.svg",
+    "static/media/editIcon.svg": "/ignat-homework/static/media/editIcon.0a0cefd2190b593b4f76bb1a5afe0c1f.svg",
     "static/media/checked.svg": "/ignat-homework/static/media/checked.b75ca55e8759862b4083.svg",
     "index.html": "/ignat-homework/index.html",
     "static/media/burger.svg": "/ignat-homework/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
-    "main.38a69dc0.css.map": "/ignat-homework/static/css/main.38a69dc0.css.map",
-    "main.21774f7b.js.map": "/ignat-homework/static/js/main.21774f7b.js.map",
+    "main.ec5c87cd.css.map": "/ignat-homework/static/css/main.ec5c87cd.css.map",
+    "main.c0e2b173.js.map": "/ignat-homework/static/js/main.c0e2b173.js.map",
     "787.66cb4309.chunk.js.map": "/ignat-homework/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.38a69dc0.css",
-    "static/js/main.21774f7b.js"
+    "static/css/main.ec5c87cd.css",
+    "static/js/main.c0e2b173.js"
   ]
 }
